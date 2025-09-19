@@ -1,0 +1,72 @@
+{
+  "status": "success",
+  "result": [
+    {
+      "id": 7453,
+      "type": "host-to-guest",
+      "status": "published",
+      "rating": null,
+      "publicReview": "Shane and family are wonderful! Would definitely host again :)",
+      "reviewCategory": [
+        { "category": "cleanliness", "rating": 10 },
+        { "category": "communication", "rating": 10 },
+        { "category": "respect_house_rules", "rating": 10 }
+      ],
+      "submittedAt": "2020-08-21 22:45:14",
+      "guestName": "Shane Finkelstein",
+      "listingName": "2B N1 A - 29 Shoreditch Heights",
+      "channel": "hostaway"
+    },
+    {
+      "id": 7454,
+      "type": "guest-to-host",
+      "status": "published",
+      "rating": 8,
+      "publicReview": "Nice stay, good host, cleaning could be better",
+      "reviewCategory": [{ "category": "cleanliness", "rating": 7 }],
+      "submittedAt": "2021-05-10 09:10:00",
+      "guestName": "Aisha K",
+      "listingName": "2B N1 A - 29 Shoreditch Heights",
+      "channel": "booking.com"
+    },
+    {
+      "id": 7455,
+      "type": "guest-to-host",
+      "status": "published",
+      "rating": 6,
+      "publicReview": "Great location, but noise at night.",
+      "reviewCategory": [
+        { "category": "cleanliness", "rating": 7 },
+        { "category": "location", "rating": 9 }
+      ],
+      "submittedAt": "2022-01-12 14:22:00",
+      "guestName": "John D",
+      "listingName": "Studio - Shoreditch Heights",
+      "channel": "airbnb"
+    },
+    { "id": 7456, "type": "guest-to-host", "status": "published", "rating": 9, "publicReview": "Lovely décor and very comfortable bed.", "reviewCategory": [ { "category": "cleanliness", "rating": 9 }, { "category": "comfort", "rating": 9 } ], "submittedAt": "2022-02-05 10:15:00", "guestName": "Emily R", "listingName": "Studio - Shoreditch Heights", "channel": "airbnb" },
+    { "id": 7457, "type": "guest-to-host", "status": "published", "rating": 5, "publicReview": "Heating was weak during cold nights.", "reviewCategory": [ { "category": "comfort", "rating": 4 } ], "submittedAt": "2022-02-18 08:40:00", "guestName": "Carlos V", "listingName": "Loft - Brick Lane", "channel": "booking.com" },
+    { "id": 7458, "type": "guest-to-host", "status": "published", "rating": 10, "publicReview": "Absolutely perfect stay!", "reviewCategory": [ { "category": "cleanliness", "rating": 10 }, { "category": "communication", "rating": 10 } ], "submittedAt": "2022-03-02 12:05:00", "guestName": "Hannah W", "listingName": "2B N1 A - 29 Shoreditch Heights", "channel": "airbnb" },
+    { "id": 7459, "type": "guest-to-host", "status": "published", "rating": 7, "publicReview": "Good value for money.", "reviewCategory": [ { "category": "value", "rating": 8 } ], "submittedAt": "2022-03-15 16:20:00", "guestName": "Liam P", "listingName": "Loft - Brick Lane", "channel": "vrbo" },
+    { "id": 7460, "type": "guest-to-host", "status": "published", "rating": 4, "publicReview": "Could be cleaner, but location is central.", "reviewCategory": [ { "category": "cleanliness", "rating": 4 }, { "category": "location", "rating": 9 } ], "submittedAt": "2022-04-01 09:30:00", "guestName": "Marta S", "listingName": "City Flat - Old Street", "channel": "booking.com" },
+    { "id": 7461, "type": "guest-to-host", "status": "published", "rating": 8, "publicReview": "Responsive host and fast Wi-Fi.", "reviewCategory": [ { "category": "communication", "rating": 9 }, { "category": "amenities", "rating": 8 } ], "submittedAt": "2022-04-11 11:11:00", "guestName": "Owen L", "listingName": "City Flat - Old Street", "channel": "airbnb" },
+    { "id": 7462, "type": "guest-to-host", "status": "published", "rating": 6, "publicReview": "Check-in instructions confusing.", "reviewCategory": [ { "category": "communication", "rating": 5 } ], "submittedAt": "2022-04-29 18:55:00", "guestName": "Sara T", "listingName": "Penthouse - Shoreditch Views", "channel": "airbnb" },
+    { "id": 7463, "type": "guest-to-host", "status": "published", "rating": 9, "publicReview": "Amazing rooftop access!", "reviewCategory": [ { "category": "amenities", "rating": 9 }, { "category": "location", "rating": 9 } ], "submittedAt": "2022-05-07 07:45:00", "guestName": "Andre B", "listingName": "Penthouse - Shoreditch Views", "channel": "airbnb" },
+    { "id": 7464, "type": "guest-to-host", "status": "published", "rating": 3, "publicReview": "Too noisy at night.", "reviewCategory": [ { "category": "location", "rating": 6 } ], "submittedAt": "2022-05-19 22:10:00", "guestName": "Nadia F", "listingName": "Loft - Brick Lane", "channel": "booking.com" },
+    { "id": 7465, "type": "guest-to-host", "status": "published", "rating": 8, "publicReview": "Comfortable and bright apartment.", "reviewCategory": [ { "category": "comfort", "rating": 8 }, { "category": "cleanliness", "rating": 8 } ], "submittedAt": "2022-06-02 13:33:00", "guestName": "Peter H", "listingName": "City Flat - Old Street", "channel": "airbnb" },
+    { "id": 7466, "type": "guest-to-host", "status": "published", "rating": 10, "publicReview": "Host went above and beyond.", "reviewCategory": [ { "category": "communication", "rating": 10 } ], "submittedAt": "2022-06-14 17:05:00", "guestName": "Grace M", "listingName": "2B N1 A - 29 Shoreditch Heights", "channel": "airbnb" },
+    { "id": 7467, "type": "guest-to-host", "status": "published", "rating": 5, "publicReview": "Average stay, nothing special.", "reviewCategory": [ { "category": "value", "rating": 5 } ], "submittedAt": "2022-06-28 19:25:00", "guestName": "Ismail Q", "listingName": "Studio - Shoreditch Heights", "channel": "airbnb" },
+    { "id": 7468, "type": "guest-to-host", "status": "published", "rating": 7, "publicReview": "Nice furnishings but bathroom small.", "reviewCategory": [ { "category": "amenities", "rating": 7 } ], "submittedAt": "2022-07-05 08:05:00", "guestName": "Helen C", "listingName": "Loft - Brick Lane", "channel": "vrbo" },
+    { "id": 7469, "type": "guest-to-host", "status": "published", "rating": 9, "publicReview": "Super clean and stylish.", "reviewCategory": [ { "category": "cleanliness", "rating": 9 }, { "category": "design", "rating": 9 } ], "submittedAt": "2022-07-17 15:44:00", "guestName": "Victor Z", "listingName": "Penthouse - Shoreditch Views", "channel": "airbnb" },
+    { "id": 7470, "type": "guest-to-host", "status": "published", "rating": 8, "publicReview": "Great stay for a business trip.", "reviewCategory": [ { "category": "amenities", "rating": 8 }, { "category": "comfort", "rating": 8 } ], "submittedAt": "2022-07-30 20:12:00", "guestName": "Martin Y", "listingName": "City Flat - Old Street", "channel": "booking.com" },
+    { "id": 7471, "type": "guest-to-host", "status": "published", "rating": 6, "publicReview": "Could use better lighting.", "reviewCategory": [ { "category": "amenities", "rating": 6 } ], "submittedAt": "2022-08-09 06:50:00", "guestName": "Olga R", "listingName": "Studio - Shoreditch Heights", "channel": "airbnb" },
+    { "id": 7472, "type": "guest-to-host", "status": "published", "rating": 2, "publicReview": "Not as described in listing.", "reviewCategory": [ { "category": "accuracy", "rating": 3 } ], "submittedAt": "2022-08-21 12:40:00", "guestName": "Dan K", "listingName": "Loft - Brick Lane", "channel": "booking.com" },
+    { "id": 7473, "type": "guest-to-host", "status": "published", "rating": 9, "publicReview": "Excellent host support.", "reviewCategory": [ { "category": "communication", "rating": 10 } ], "submittedAt": "2022-09-02 09:18:00", "guestName": "Julia P", "listingName": "Penthouse - Shoreditch Views", "channel": "airbnb" },
+    { "id": 7474, "type": "guest-to-host", "status": "published", "rating": 7, "publicReview": "Decent for short stays.", "reviewCategory": [ { "category": "value", "rating": 7 } ], "submittedAt": "2022-09-15 11:59:00", "guestName": "Ravi S", "listingName": "City Flat - Old Street", "channel": "airbnb" },
+    { "id": 7475, "type": "guest-to-host", "status": "published", "rating": 10, "publicReview": "Five stars all around!", "reviewCategory": [ { "category": "cleanliness", "rating": 10 }, { "category": "communication", "rating": 10 } ], "submittedAt": "2022-10-01 10:10:00", "guestName": "Sophia L", "listingName": "Penthouse - Shoreditch Views", "channel": "airbnb" },
+    { "id": 7476, "type": "guest-to-host", "status": "published", "rating": 5, "publicReview": "Could improve maintenance.", "reviewCategory": [ { "category": "amenities", "rating": 5 } ], "submittedAt": "2022-10-12 17:17:00", "guestName": "Erik T", "listingName": "Studio - Shoreditch Heights", "channel": "airbnb" },
+    { "id": 7477, "type": "guest-to-host", "status": "published", "rating": 6, "publicReview": "Okay stay, met expectations.", "reviewCategory": [ { "category": "value", "rating": 6 } ], "submittedAt": "2022-11-03 14:05:00", "guestName": "Louise B", "listingName": "City Flat - Old Street", "channel": "vrbo" },
+    { "id": 7478, "type": "guest-to-host", "status": "published", "rating": 8, "publicReview": "Enjoyed the natural light.", "reviewCategory": [ { "category": "design", "rating": 8 } ], "submittedAt": "2022-11-18 08:08:00", "guestName": "Patrick N", "listingName": "Loft - Brick Lane", "channel": "airbnb" },
+    { "id": 7479, "type": "guest-to-host", "status": "published", "rating": 9, "publicReview": "Spacious and modern.", "reviewCategory": [ { "category": "design", "rating": 9 }, { "category": "comfort", "rating": 9 } ], "submittedAt": "2022-12-05 19:32:00", "guestName": "Isabella Q", "listingName": "Penthouse - Shoreditch Views", "channel": "airbnb" }
+  ]
+}
