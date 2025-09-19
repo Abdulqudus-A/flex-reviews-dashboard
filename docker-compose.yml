@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  backend:
+    build: ./app/backend
+    container_name: flex_reviews_backend
+    environment:
+      - PORT=4000
+      - HOSTAWAY_ACCOUNT_ID=${HOSTAWAY_ACCOUNT_ID:-61148}
+      - HOSTAWAY_API_KEY=${HOSTAWAY_API_KEY:-changeme}
+    ports:
+      - "4000:4000"
+    volumes:
+      - backend_data:/app/data
+  frontend:
+    build: ./app/frontend
+    container_name: flex_reviews_frontend
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://localhost:4000
+    ports:
+      - "5173:80"
+volumes:
+  backend_data:
