@@ -85,7 +85,7 @@
 ## Live demo
 A deployed frontend is available at:
 
-https://flex-reviews-dashboard-6prqidf4b-abdulqudus-aremus-projects.vercel.app/
+https://flex-reviews-dashboard-git-main-abdulqudus-aremus-projects.vercel.app?_vercel_share=uo2NlIPCpsKpexx8nctEK3rfsA2tKnrL
 
 The backend API (if deployed separately) should be set as the `VITE_API_URL` environment variable in the Vercel project settings.
 
