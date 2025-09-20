@@ -198,18 +198,37 @@ export default function Dashboard() {
         <Grid container spacing={2} mb={4}>
           <Grid item xs={12} md={8}>
             <Paper elevation={0} sx={theme=>({ p:2.5, borderRadius:4, border:`1px solid ${alpha(theme.palette.divider,0.15)}` })}>
-              <Typography variant="subtitle1" fontWeight={600} mb={1}>Category Averages</Typography>
+              <Typography variant="subtitle1" fontWeight={600} mb={2}>Category Averages</Typography>
               {catAgg.length === 0 && <Typography variant="body2" color="text.secondary">No category data.</Typography>}
-              {catAgg.slice(0,6).map(block => (
-                <Box key={block.listing} mb={2}>
-                  <Typography variant="caption" fontWeight={600} sx={{ letterSpacing:.5 }}>{block.listing}</Typography>
-                  <Box display="flex" flexWrap="wrap" gap={1} mt={0.5}>
-                    {block.categories.sort((a:any,b:any)=>b.avgRating-a.avgRating).slice(0,5).map((c:any) => (
-                      <Chip key={c.category} size="small" label={`${c.category}: ${c.avgRating.toFixed(1)}`} />
-                    ))}
-                  </Box>
-                </Box>
-              ))}
+
+              <Grid container spacing={2}>
+                {catAgg.slice(0,6).map(block => {
+                  const avg = typeof block.avgRating === 'number' ? block.avgRating : 0;
+                  const pct = Math.round(Math.max(0, Math.min(5, avg)) / 5 * 100);
+                  return (
+                    <Grid item xs={12} sm={6} key={block.listing}>
+                      <Box sx={{ p: 2, borderRadius: 2, border: theme => `1px solid ${alpha(theme.palette.divider,0.08)}` }}>
+                        <Box display="flex" alignItems="center" justifyContent="space-between">
+                          <Typography variant="subtitle2" fontWeight={700} noWrap sx={{ mr: 1 }}>{block.listing}</Typography>
+                          <Typography variant="h6" fontWeight={800}>{avg ? avg.toFixed(1) : '—'}</Typography>
+                        </Box>
+
+                        <Box sx={{ mt: 1 }}>
+                          <Box sx={{ height: 8, width: '100%', background: theme => alpha(theme.palette.primary.main,0.08), borderRadius: 99, overflow: 'hidden' }}>
+                            <Box sx={{ height: '100%', width: `${pct}%`, background: theme => theme.palette.primary.main }} />
+                          </Box>
+                        </Box>
+
+                        <Box display="flex" flexWrap="wrap" gap={0.6} mt={1}>
+                          {Array.isArray(block.categories) && block.categories.sort((a:any,b:any)=>b.avgRating-a.avgRating).slice(0,5).map((c:any) => (
+                            <Chip key={c.category} size="small" label={`${c.category}: ${c.avgRating.toFixed(1)}`} sx={{ borderColor: 'rgba(0,0,0,0.06)' }} />
+                          ))}
+                        </Box>
+                      </Box>
+                    </Grid>
+                  );
+                })}
+              </Grid>
             </Paper>
           </Grid>
           <Grid item xs={12} md={4}>
