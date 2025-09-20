@@ -82,6 +82,13 @@
 2. Frontend: `npm install` then `npm run dev`, ensure `VITE_API_URL=http://localhost:4000`.
 3. Visit dashboard at frontend dev URL (usually `http://localhost:5173`).
 
+## Live demo
+A deployed frontend is available at:
+
+https://flex-reviews-dashboard-6prqidf4b-abdulqudus-aremus-projects.vercel.app/
+
+The backend API (if deployed separately) should be set as the `VITE_API_URL` environment variable in the Vercel project settings.
+
 ## 8. Data Contract (NormalizedReview)
 ```
 {
