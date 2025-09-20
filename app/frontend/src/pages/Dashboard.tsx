@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Container, Grid, Box, TextField, MenuItem, Button, Typography, CircularProgress, Alert, alpha, Paper, Chip } from "@mui/material";
+import { Container, Grid, Box, TextField, MenuItem, Button, Typography, CircularProgress, Alert, alpha, Paper, Chip, LinearProgress } from "@mui/material";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from "recharts";
 import ReviewCard from "../components/ReviewCard";
 import StatsCard from "../components/StatsCard";
@@ -162,10 +162,10 @@ export default function Dashboard() {
       {error && <Alert severity="error" sx={{ mb: 3 }}>{error}</Alert>}
 
       <Grid container spacing={2} mb={4}>
-        <Grid item xs={12} sm={6} md={3}><AnimatedCard><StatsCard title="Total Reviews" value={reviews.length} /></AnimatedCard></Grid>
-        <Grid item xs={12} sm={6} md={3}><AnimatedCard delay={60}><StatsCard title="Approved" value={approvedCount} /></AnimatedCard></Grid>
-        <Grid item xs={12} sm={6} md={3}><AnimatedCard delay={120}><StatsCard title="Pending" value={pendingCount} /></AnimatedCard></Grid>
-        <Grid item xs={12} sm={6} md={3}><AnimatedCard delay={180}><StatsCard title="Avg Rating" value={Number(avgAll)} /></AnimatedCard></Grid>
+  <Grid item xs={12} sm={6} md={3}><AnimatedCard><StatsCard title="Total Reviews" value={reviews.length} type="reviews" /></AnimatedCard></Grid>
+  <Grid item xs={12} sm={6} md={3}><AnimatedCard delay={60}><StatsCard title="Approved Reviews" value={approvedCount} type="approved" /></AnimatedCard></Grid>
+  <Grid item xs={12} sm={6} md={3}><AnimatedCard delay={120}><StatsCard title="Pending Reviews" value={pendingCount} type="pending" /></AnimatedCard></Grid>
+  <Grid item xs={12} sm={6} md={3}><AnimatedCard delay={180}><StatsCard title="Average Rating" value={Number(avgAll)} type="rating" /></AnimatedCard></Grid>
       </Grid>
 
       <Paper elevation={0} sx={theme => ({

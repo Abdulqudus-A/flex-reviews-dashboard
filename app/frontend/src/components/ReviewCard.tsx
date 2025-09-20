@@ -1,4 +1,6 @@
 import { Card, CardContent, Typography, Chip, Box, Button, Tooltip, Fade } from "@mui/material";
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import HourglassBottomIcon from '@mui/icons-material/HourglassBottom';
 import { Review } from "../types";
 
 interface ReviewCardProps {
@@ -55,7 +57,20 @@ export default function ReviewCard({ review, onApprove, dense }: ReviewCardProps
         <Box display="flex" alignItems="center" gap={0.75} mb={1} flexWrap="wrap">
           {channel && <Chip size="small" label={channel} variant="outlined" />}
           <Chip size="small" label={new Date(submittedAt).toLocaleDateString()} />
-          {approved && <Chip size="small" color="success" label="Approved" />}
+          {approved ? (
+            <Chip size="small" color="success" label="Approved" />
+          ) : (
+            <Chip
+              size="small"
+              label="Pending"
+              sx={{
+                background: 'rgba(245,179,0,0.10)',
+                color: 'rgba(245,122,0,0.95)',
+                fontWeight: 600,
+                borderRadius: 1
+              }}
+            />
+          )}
         </Box>
         {text && (
           <Tooltip TransitionComponent={Fade} title={text} enterDelay={600} arrow>
@@ -97,6 +112,7 @@ export default function ReviewCard({ review, onApprove, dense }: ReviewCardProps
               textTransform: "none",
               ...(approved ? { borderColor: 'rgba(40,78,76,0.9)', color: 'rgba(40,78,76,0.95)' } : {}),
             }}
+            startIcon={approved ? <CheckCircleOutlineIcon /> : <HourglassBottomIcon />}
           >
             {approved ? "Unapprove" : "Approve"}
           </Button>
