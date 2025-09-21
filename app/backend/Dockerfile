@@ -17,8 +17,9 @@ RUN npm ci --omit=dev
 COPY --from=deps /app/dist ./dist
 # Copy mock and other runtime assets
 COPY src/mock ./dist/mock
-# Copy local DB file so runtime has filesystem persistence
-COPY db.json ./db.json
+# Ensure a db.json exists at runtime (create a default if missing)
+# This avoids Docker build failures when db.json is gitignored or not present
+RUN [ -f /app/db.json ] || echo '{}' > /app/db.json
 # Expose port
 EXPOSE 4000
 CMD ["node","dist/server.js"]
