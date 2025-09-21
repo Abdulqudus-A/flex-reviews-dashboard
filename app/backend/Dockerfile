@@ -17,6 +17,8 @@ RUN npm ci --omit=dev
 COPY --from=deps /app/dist ./dist
 # Copy mock and other runtime assets
 COPY src/mock ./dist/mock
+# Copy local DB file so runtime has filesystem persistence
+COPY db.json ./db.json
 # Expose port
 EXPOSE 4000
 CMD ["node","dist/server.js"]
