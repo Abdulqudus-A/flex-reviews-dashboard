@@ -42,7 +42,7 @@ npm run dev            # opens (usually) http://localhost:5173
 
 ## Live demo
 
-Frontend demo: https://flex-reviews-dashboard-git-main-abdulqudus-aremus-projects.vercel.app?_vercel_share=uo2NlIPCpsKpexx8nctEK3rfsA2tKnrL
+Frontend demo: https://flex-reviews-dashboard-psi.vercel.app
 
 ## Environment Variables (Backend)
 | Variable | Purpose | Default |
